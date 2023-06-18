@@ -1,11 +1,21 @@
+import React, { memo } from 'react';
+import { renderRoutes } from 'react-router-config';
+
+import routes from './router';
+import { HashRouter } from 'react-router-dom/cjs/react-router-dom.min';
+
+import HYAppheader from 'components/app-header';
+import HYAppfooter from 'components/app-footer';
 
 
-function App() {
+const App = memo(() => {
   return (
-    <div>
-      app
-    </div>
-  );
-}
+    <HashRouter>
+      <HYAppheader/>
+      { renderRoutes(routes)}
+      <HYAppfooter/>
+    </HashRouter>
+  )
+})
 
-export default App;
+export default App

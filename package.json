@@ -3,20 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^7.1.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@craco/craco": "5.5.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "craco-less": "^1.17.1",
+    "craco-plugin-scoped-css": "^1.1.1",
+    "craco-scoped-less": "^1.0.3",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-router-config": "5.1.1",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "4.0.3",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
