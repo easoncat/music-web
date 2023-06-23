@@ -12,7 +12,7 @@ const App = memo(() => {
   return (
     <HashRouter>
       <HYAppheader/>
-      { renderRoutes(routes)}
+      { renderRoutes(routes) }
       <HYAppfooter/>
     </HashRouter>
   )
