@@ -28,7 +28,7 @@ const HYAppheader = memo(() => {
             <NavLink to="/mine">我的音乐</NavLink>
             <NavLink to="/friend">我的朋友</NavLink> */}
             <div className='header_left'>
-              <a href='#/' className='logo sprite_01'></a>
+              <a href='#/' className='logo sprite_01'>网易云音乐</a>
               <div className='select-list'>
                 {
                   headerLinks.map((item, index) => {

@@ -1,4 +1,4 @@
-import React, { memo, Fragment } from 'react'
+import React, { memo } from 'react'
 
 import { footerLinks, footerImages } from "@/common/local-data";
 
@@ -9,14 +9,14 @@ const HYAppfooter = memo(() => {
     <div className='footer_wrapper'>
         <div className='wrap-v2 content'>
           <div className='footer_left'>
-            <div className="link">
+            <div style={{display: 'flex'}} className='link'>
               {
                 footerLinks.map(item => {
                   return (
-                    <Fragment key={item.title}>
+                    <div key={item.title}>
                       <a href={item.link} target="_blank" rel="noopener noreferrer">{item.title}</a>
-                      <span className="line">|</span>
-                    </Fragment>
+                      <span className='line'>|</span>
+                    </div>
                   )
                 })
               }
@@ -28,14 +28,14 @@ const HYAppfooter = memo(() => {
                 <a href="https://p1.music.126.net/Mos9LTpl6kYt6YTutA6gjg==/109951164248627501.png" rel="noopener noreferrer" target="_blank">浙网文[2018]3506-263号</a>
               </span>
             </div>
-            <div className="report">
+            <div className="copyright">
               <span>违法和不良信息举报电话：0571-89853516</span>
               <span>
                 举报邮箱：
                 <a href="mailto:ncm5990@163.com" target="_blank" rel="noopener noreferrer">ncm5990@163.com</a>
               </span>
             </div>
-            <div className="info">
+            <div className="copyright">
               <span>粤B2-20090191-18</span>
               <a href="http://www.beian.miit.gov.cn/publish/query/indexFirst.action" rel="noopener noreferrer" target="_blank">
                 工业和信息化部备案管理系统网站
